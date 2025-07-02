@@ -24,7 +24,7 @@ https://github.com/user-attachments/assets/e846ad6d-d732-4eeb-b5f0-aeb020b62f67
 - Express
 - MongoDB (via Mongoose)
 - dotenv
-- nodemon
+- Javascript
 
 ## Getting Started
 
