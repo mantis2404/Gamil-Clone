@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,apps,archive,arrow_back_ios,arrow_drop_down,arrow_forward_ios,arrow_right,close,delete,draft,drag_indicator,group,help,inbox,info,keyboard_arrow_down,keyboard_arrow_up,label,label_important,mark_as_unread,menu,report,schedule,schedule_send,search,sell,send,settings,stacked_email,star" />
+        <title>Gmail</title>
+    </head>
+    <body>
+      <div class="header">
+          <span class="material-symbols-outlined" id="menu">menu</span>
+          <img src="image 16.png" id="gmail-logo">
+            <span class="material-symbols-outlined" id="search-icon">
+                search
+                </span>
+          <input class="search-input" type="text" placeholder="Search mail" />
+          <div id="search-extra">
+            <span class="material-symbols-outlined" id="close">
+              close
+              </span>
+              <span class="material-symbols-outlined">
+                arrow_drop_down
+                </span>
+          </div>
+          <div class="support-icons">
+            <!-- <div> -->
+              <span class="material-symbols-outlined">
+                help
+                </span>
+              <span class="material-symbols-outlined">
+                settings
+                </span>
+              <span class="material-symbols-outlined">
+                  apps
+                </span>
+              
+                <img src="Avatar.png" id="account-photo">
+            </div>
+      </div>
+      <div id="parent-new-msg">
+        <div id="new-msg"></div>
+      </div>
+      <div class="display-area">
+        <div class="nav-sidebar sidebar">
+          <button class="compose-btn "><img src="New.png" id="comp-logo"><p class="compose-txt sidebar-txt">Compose</p></button>
+          <div class="nav-item active not-more sidebar-txt" id="inbox"><span class="material-symbols-outlined" >inbox</span >Inbox</div>
+          <div class="nav-item not-more sidebar-txt" id="starred-tab"><span class="material-symbols-outlined">star</span>Starred</div>
+          <div class="nav-item not-more sidebar-txt"><span class="material-symbols-outlined">schedule</span>Snoozed</div>
+          <div class="nav-item not-more sidebar-txt"><span class="material-symbols-outlined">send</span>Sent</div>
+          <div class="nav-item not-more sidebar-txt"id="draft"><span class="material-symbols-outlined" >draft</span>Drafts<p class="count">1</p></div>
+          <div class="nav-item not-more sidebar-txt"id="spam"><span class="material-symbols-outlined" >report</span>Spam<p class="count">3</p></div>
+          <div class="nav-item not-more sidebar-txt"><span class="material-symbols-outlined">delete</span>Trash</div>
+          <div class="nav-item not-more sidebar-txt category"><div class="category-arrow">
+            <span class="material-symbols-outlined ">arrow_rightlabel</span>
+          </div>Categories</div>
+          <div class="nav-item sidebar-txt" id="more"><span class="material-symbols-outlined">keyboard_arrow_down</span>More</div>
+          <div class="extra">
+              <div class="nav-item nav-extra sidebar-txt"><span class="material-symbols-outlined">schedule_send</span>Scheduled</div>
+              <div class="nav-item nav-extra sidebar-txt"><span class="material-symbols-outlined">label_important</span>Important</div>
+              <div class="nav-item nav-extra sidebar-txt"><span class="material-symbols-outlined">stacked_email</span>All Mail</div>
+          </div>
+        </div>
+
+        <div class="main">
+          <div id="extra-toolbar">
+            <div class="extra-toolbar-items">
+              <span style="font-size: 17px; color: #868787; margin-right: 30px;">1-50 of 2,415</span>
+              <span class="material-symbols-outlined" style="font-size: small;">
+              arrow_back_ios
+              </span><span class="material-symbols-outlined" style="font-size: small;">
+                arrow_forward_ios
+                </span>
+            </div>
+            </div>
+              
+          <div class="email-toolbar">
+            <div class="toolbar-items active-toolbar-item" data-category="primary"><span class="material-symbols-outlined">
+              group
+              </span>Primary<div class="border-bottom-toolbar"></div></div>
+            <div class="toolbar-items" data-category="social"><span class="material-symbols-outlined">
+              group
+              </span>Social
+              <span style="background-color: #3474E0; color:white;; font-size: small; border-radius: 2%;" id="new-social" class="new"></span>
+              <div class="border-bottom-toolbar"></div></div>
+            <div class="toolbar-items" data-category="promotions"><span class="material-symbols-outlined">
+              sell
+              </span>Promotions
+              <span style="background-color: #3C7D40; color:white;; font-size: small; border-radius: 2%;" id="new-promotion" class="new"></span>
+              <div class="border-bottom-toolbar"></div></div>
+            <div class="toolbar-items" data-category="updates"><span class="material-symbols-outlined">
+              info
+              </span>Updates<div class="border-bottom-toolbar"></div></div>
+          </div>
+          <div id="mailContainer"></div>
+        </div>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
